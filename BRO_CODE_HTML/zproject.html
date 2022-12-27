@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projectZ</title>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form action="/action.php">
+
+        <input type="text" placeholder="username">
+        <br>
+        <br>
+        <input type="password" placeholder="password">
+        <br>
+        <br>
+
+        <h5>select your class</h5>
+        <label for="101">
+            <input type="radio" value="class XI" name="class" id="101">class XI
+        </label>
+        <br>
+        <br>
+        <label for="102">
+            <input type="radio" value="class XII" name="class" id="102">class XII
+        </label>
+        <br>
+        <br>
+
+        <h5>select fav subject</h5>
+        <label for="HTML">
+            <input type="checkbox" value="HTML" name="subject" id="101">HTML
+        </label>
+        <br>
+        <br>
+        <label for="CSS">
+            <input type="checkbox" value="CSS" name="subject" id="102">CSS
+        </label>
+        <br>
+        <br>
+        <label for="PYTHON">
+            <input type="checkbox" value="PYTHON" name="subject" id="103">PYTHON
+        </label>
+        <br>
+        <br>
+        <label for="POSTGRESQL">
+            <input type="checkbox" value="POSTGRESQL" name="subject" id="104">POSTGRESQL
+        </label>
+        <br>
+        <br>
+
+        Select your city
+        <select name="city">
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="feedback" id="101" cols="30" rows="10" placeholder="Give your valueable feedback here:"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+</html>

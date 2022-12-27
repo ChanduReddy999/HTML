@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project using Form Elements</title>
+</head>
+<body>
+    <form action="action_page.php" method="get">
+        <div>               <!--  in the above instead of  method="get"  use  method="post"  because of server setup for security like password to secure some information  -->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your First Name" required>
+            
+        </div>
+        <br>
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your Last Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <br>
+        <div>
+            <label for="Pwd">Password:</label>
+            <input type="Password" id="Pwd" name="Pwd" maxlength="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="Email" id="Email" name="Email" placeholder="abc12@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="Phone">Phone:</label>
+            <input type="tel" id="Phone" name="Phone" placeholder="(+91) 12345 67890">
+        </div>
+        <br>
+        <div>
+            <label for="DOB">DOB:</label>
+            <input type="Date" id="DOB" name="DOB">
+        </div>
+        <br>
+
+        <!--
+        <div>
+            <label for="Quality">Quality:</label>
+            <input type="number" id="Quality" name="Quality" min="0" max="99" value="1">
+        </div>
+        <br>
+        -->
+        
+        <div>
+            <label for="Title">Title:</label>
+
+            <label for="Mister">Mr.</label>
+            <input type="radio" id="Mister" name="Title" value="Mr.">
+
+            <label for="Misses">Mrs.</label>
+            <input type="radio" id="Misses" name="Title" value="Mrs.">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name="Title" value="PhD.">
+        </div>
+        <br>
+        <div>
+            <label for="Payment">Payment:</label>
+            <select id="Payment" name="Payment">
+                <option value="Visa Card">Visa Card</option>
+                <option value="Master Card">Master Card</option>
+                <option value="Platinum Card">Platinum Card</option>
+                <option value="Gift Card">Gift Card</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Terms and Conditions">Terms and Conditions:</label>
+            <input type="checkbox" id="Terms and Conditions" name="Terms and Conditions">
+        </div>
+        <br>
+        <div>
+            <button>Reset</button>
+        </div>
+        <br>
+        <div>
+            <button>Submit</button>
+        </div>
+        
+
+    </form>
+</body>
+</html>
